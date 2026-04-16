@@ -1,0 +1,33 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "sample-df",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "poc_data": {
+      "queryId": "cc2e0b5e-2ab7-4490-84d8-2fdf487fb72f",
+      "queryName": "poc_data"
+    },
+    "poc_data_DataDestination": {
+      "queryId": "7ed69d92-15e3-45a1-8bca-7f4195efee06",
+      "queryName": "poc_data_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"dfbd8e94-47eb-4f00-9d4e-4b5713d80b10\",\"DatasourceId\":\"bbc3d7aa-b1f1-42e4-a226-7a5dad6504af\"}"
+    },
+    {
+      "path": "Warehouse",
+      "kind": "Warehouse",
+      "connectionId": "{\"ClusterId\":\"dfbd8e94-47eb-4f00-9d4e-4b5713d80b10\",\"DatasourceId\":\"f18315fd-ec5f-4744-8257-16cad5d8603f\"}"
+    }
+  ]
+}
