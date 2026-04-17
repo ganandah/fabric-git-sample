@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Dataflow",
+    "displayName": "DFGen2_Copilot"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "2dc799ca-1d1a-bba8-491c-87671a864da3"
+  }
+}

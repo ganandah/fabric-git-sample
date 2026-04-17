@@ -1,0 +1,159 @@
+table dim_city
+	lineageTag: 88ae684b-b616-4d28-8dca-b878dcbc312b
+	sourceLineageTag: [dbo].[dim_city]
+
+	column CityKey
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 6fd2eac6-305a-4310-8897-184517b5bb60
+		sourceLineageTag: CityKey
+		summarizeBy: none
+		sourceColumn: CityKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column WWICityID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 664893d3-9e4f-4166-902d-c566802be595
+		sourceLineageTag: WWICityID
+		summarizeBy: none
+		sourceColumn: WWICityID
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6932bcf7-6bb3-43b2-90c1-464086a2480e
+		sourceLineageTag: City
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column StateProvince
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 17c11344-5f57-4ad6-9d48-2a33171b1ef3
+		sourceLineageTag: StateProvince
+		summarizeBy: none
+		sourceColumn: StateProvince
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d781788d-72a8-461d-a195-03c68934b699
+		sourceLineageTag: Country
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Continent
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 081a6de9-3302-43c2-b8f7-00d256c5f6fb
+		sourceLineageTag: Continent
+		summarizeBy: none
+		sourceColumn: Continent
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalesTerritory
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 60eca096-e9a3-4b39-8b25-a4ac02cc56a6
+		sourceLineageTag: SalesTerritory
+		summarizeBy: none
+		sourceColumn: SalesTerritory
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e7076dcd-d4b7-4a31-aabd-cd0d4a0170cf
+		sourceLineageTag: Region
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column Subregion
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 32c2759a-463a-459c-8564-028d46da14c8
+		sourceLineageTag: Subregion
+		summarizeBy: none
+		sourceColumn: Subregion
+
+		annotation SummarizationSetBy = Automatic
+
+	column Location
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2c43bf47-fe2c-4626-8727-f593be400afa
+		sourceLineageTag: Location
+		summarizeBy: none
+		sourceColumn: Location
+
+		annotation SummarizationSetBy = Automatic
+
+	column LatestRecordedPopulation
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 7d047821-52d7-4b57-9f2e-d4477bbcaff1
+		sourceLineageTag: LatestRecordedPopulation
+		summarizeBy: none
+		sourceColumn: LatestRecordedPopulation
+
+		annotation SummarizationSetBy = Automatic
+
+	column ValidFrom
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: dde7fb6c-6e03-4329-9274-ea26e1de7d7f
+		sourceLineageTag: ValidFrom
+		summarizeBy: none
+		sourceColumn: ValidFrom
+
+		annotation SummarizationSetBy = Automatic
+
+	column ValidTo
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: b64ce6c7-bb93-49c7-b579-1cebc23e5148
+		sourceLineageTag: ValidTo
+		summarizeBy: none
+		sourceColumn: ValidTo
+
+		annotation SummarizationSetBy = Automatic
+
+	column LineageKey
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: a5e5c10e-a066-4ed1-9235-b3b4fa7f5b9a
+		sourceLineageTag: LineageKey
+		summarizeBy: none
+		sourceColumn: LineageKey
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_city = entity
+		mode: directLake
+		source
+			entityName: dim_city
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,2293 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.4.0/schema.json",
+  "displayName": "Days to Close",
+  "name": "Bookmarkc8c50c205523c12eec7a",
+  "options": {
+    "targetVisualNames": [
+      "ba3cc2101a39bbc698d4",
+      "3d3745d046b35a269ceb",
+      "b5da5d65c6660b470510",
+      "b77245f42530a0c95c59",
+      "00447a5c2e3a8411530b",
+      "a1ff583105bead36d2b6",
+      "5fae428c0a4d310256ae",
+      "417d4cafc37e89e5291c",
+      "1bc1469b952600000373",
+      "1e8de3a6e0ba3300b029",
+      "6833c4a62b8337a7c12b",
+      "8b738a30cb000a131a64",
+      "ad4ce13d26c5bb39a36b"
+    ],
+    "suppressActiveSection": true,
+    "suppressData": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSectionf0c8ef19be5e8127c627",
+    "sections": {
+      "ReportSectionf0c8ef19be5e8127c627": {
+        "filters": {
+          "byName": {
+            "Filter": {
+              "name": "Filter",
+              "type": "Categorical",
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "o",
+                    "Entity": "Opportunities",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "o"
+                                }
+                              },
+                              "Property": "Status"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Lost'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Won'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Opportunities"
+                    }
+                  },
+                  "Property": "Status"
+                }
+              },
+              "howCreated": 1
+            }
+          },
+          "byExpr": [
+            {
+              "name": "Filter7",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Opportunities"
+                    }
+                  },
+                  "Property": "Decision Maker Identified"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "Filter8",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Opportunities"
+                    }
+                  },
+                  "Property": "Purchase Process"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "Filter5",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "★ Industries"
+                    }
+                  },
+                  "Property": "★Industry "
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "Filter3",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "★ Opportunity Owners"
+                    }
+                  },
+                  "Property": "★ Manager"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "Filter4",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "★ Opportunity Owners"
+                    }
+                  },
+                  "Property": "★ Owner"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "Filter2",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "★ Products"
+                    }
+                  },
+                  "Property": "★ Product Category"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "Filter1",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "★ Products"
+                    }
+                  },
+                  "Property": "★ Product"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "Filter6",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Opportunities"
+                    }
+                  },
+                  "Property": "Purchase Process"
+                }
+              },
+              "howCreated": 1
+            }
+          ]
+        },
+        "visualContainers": {
+          "5837952bd9ca6349e851": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "6e68fc028530a7be900c": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "4d30bc2b8dd38567bb7d": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "4f819cd094b5ea58e960": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "31d50adc5c25e3d70008": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "2ba3ab5ed7bd0b2d0270": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "03ae79105427305d666d": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "2429c589463dc51ec691": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "2aaf14b780bd939aec6e": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "ffd23eb401819c80823a": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "3a5c8b8b82003e60aa14": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "3814d746a193e4021d42": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "b6771226c7962a954eed": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "e4aef524a356522b63d0": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "c9224c10380d44edd00d": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "8cca239116a3bc1b0358": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "83d515763a4475169653": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "fa24b1d7362ad80529c6": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "4b8388f36300ba70c7dc": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "85b81ac670288e9549b6": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "9888e66d0e2c03376645": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "cf54948fb05081d05c50": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "1754a0b0ebe0040a9052": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "396fc1f90094edb8e628": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "358e8c3b68773bde5ae6": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "4801f8329cb42c1341cd": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "c67caddd084c8510bab3": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "1467b4bf008ce27c3b45": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "753b9ac522b7e187a392": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "64a38e45805ad0bd2e41": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "61cb00414628c07c49ba": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "bb378417b0580981e9a7": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "21b4361e6adea3a77105": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "7531439d383a90434207": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "7e6b6970e100c9d012e7": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "f1b395c0c09ed5836497": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "07a2996e615704858084": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "06ab1cee48700a145580": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "dd15f8e42db47c410645": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "e10cf49b959c10e4b080": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "c9c8652586532c02c8dc": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "2fc713c09a4164b7709c": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "b05731877c088969c625": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "2be1b54bd7d475b4dd02": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "abf9986f7ee07e72e0e5": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "78226d47359c4e185795": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "b04a9f612be7804073d0": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "3ddcdb8fb53a8900136a": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "a7cef6043012326405b3": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "695b3170d3d14d89a961": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "fc532cdbdc7e58560e61": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "ab0de57677becd818853": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "1243313db8d6685bac1e": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "da79df3c99e611cdc3a6": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "b21a45650d0ad02bdcb2": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "c19aca877870c7310c8e": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "6221a6dfb0050a0701be": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "9d39ad021e850080225d": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "29fe16678b36e0635865": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "182e3e6d0a959eb20084": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "6f51545140e7589a16b5": {
+            "singleVisual": {
+              "visualType": "pageNavigator",
+              "objects": {}
+            }
+          },
+          "b1e74c1bea07a95c7a37": {
+            "singleVisual": {
+              "visualType": "bookmarkNavigator",
+              "objects": {}
+            }
+          },
+          "62ca4c3189aaa063ab97": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "b5da5d65c6660b470510": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "4fa6d86a5bb6a0103c94",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Opportunities"
+                            }
+                          },
+                          "Property": "Discount"
+                        }
+                      },
+                      "Function": 1
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e8082d36635407de958d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Opportunity Owners"
+                        }
+                      },
+                      "Property": "★ Owner"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c1ba405c9c5505560d00",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Opportunity Owners"
+                        }
+                      },
+                      "Property": "★ Manager"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Opportunities"
+                            }
+                          },
+                          "Property": "Discount"
+                        }
+                      },
+                      "Function": 1
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Opportunity Owners"
+                        }
+                      },
+                      "Property": "★ Owner"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "b77245f42530a0c95c59": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "f8221709d339380e9849",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Products"
+                        }
+                      },
+                      "Property": "★ Product"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "138e74c40460014c205b",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Opportunity Owners"
+                        }
+                      },
+                      "Property": "★ Owner"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "283f6902c0b7edce24c5",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Opportunity Owners"
+                        }
+                      },
+                      "Property": "★ Manager"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "8ac93df2ce1bd717210b",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Accounts"
+                        }
+                      },
+                      "Property": "State or Province"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "0b1d48e60e702500334e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "Purchase Process"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c343a9bc23e9e4c87000",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "Decision Maker Identified"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e0acd1b20cb687c53921",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★Campaigns "
+                        }
+                      },
+                      "Property": "★ Campaign"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "8ba6727458b034044309",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★Campaigns "
+                        }
+                      },
+                      "Property": "★ Campaign Type"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "5b9ddba1edd8a0427732",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Industries"
+                        }
+                      },
+                      "Property": "★Industry "
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c9fc570f0a86e9a831d0",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Territories"
+                        }
+                      },
+                      "Property": "Territory"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "37032a827c1000ce1200",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Territories"
+                        }
+                      },
+                      "Property": "Region"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "085b0c557304c0b837c9",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "Discount"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "keyDriversVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Territories"
+                        }
+                      },
+                      "Property": "Territory"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "00447a5c2e3a8411530b": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "1662be9d38d373150814",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Territories"
+                        }
+                      },
+                      "Property": "Territory"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "4f4252f16a29cd2028e6",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Opportunities"
+                            }
+                          },
+                          "Property": "Discount"
+                        }
+                      },
+                      "Function": 1
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Opportunities"
+                            }
+                          },
+                          "Property": "Discount"
+                        }
+                      },
+                      "Function": 1
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Territories"
+                        }
+                      },
+                      "Property": "Territory"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "5fae428c0a4d310256ae": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "1af150b9900cca9ca0ca",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Industries"
+                        }
+                      },
+                      "Property": "★Industry "
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "720bc533e36507650843",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "AVG Days to Close"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "AVG Days to Close"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Industries"
+                        }
+                      },
+                      "Property": "★Industry "
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "417d4cafc37e89e5291c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "f35da83dc7dba2ce7202",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Opportunity Owners"
+                        }
+                      },
+                      "Property": "★ Owner"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f001ba1c000047e4b562",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "AVG Days to Close"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "AVG Days to Close"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Opportunity Owners"
+                        }
+                      },
+                      "Property": "★ Owner"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "1bc1469b952600000373": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b9f6aab0bc0aa00cd800",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Products"
+                        }
+                      },
+                      "Property": "★ Product"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "86af14dfa0348b195257",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Opportunity Owners"
+                        }
+                      },
+                      "Property": "★ Owner"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "b1f9c4840cd33b3b8386",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Opportunity Owners"
+                        }
+                      },
+                      "Property": "★ Manager"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "bdb7fd0f106c039a417a",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Accounts"
+                        }
+                      },
+                      "Property": "State or Province"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "bc6bdc7133686dae4702",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "Purchase Process"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "66a79468a6aeb79abe87",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "Decision Maker Identified"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "481ffebd2bb10a14aadb",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★Campaigns "
+                        }
+                      },
+                      "Property": "★ Campaign"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "15c55f0d4daa65309ada",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★Campaigns "
+                        }
+                      },
+                      "Property": "★ Campaign Type"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7625ea7dd52a08a567da",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Industries"
+                        }
+                      },
+                      "Property": "★Industry "
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "587d3734d09c9d569967",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Territories"
+                        }
+                      },
+                      "Property": "Territory"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a1d610fae9848b1ea7a0",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Territories"
+                        }
+                      },
+                      "Property": "Region"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "keyDriversVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "AVG Days to Close"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "6833c4a62b8337a7c12b": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "f2ecb8c863864c066d09",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Products"
+                        }
+                      },
+                      "Property": "★ Product Category"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1881766d14011db0d510",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "Close %"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "Close %"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Products"
+                        }
+                      },
+                      "Property": "★ Product Category"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "8b738a30cb000a131a64": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "7ee8ecaa0ec97111e29d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Products"
+                        }
+                      },
+                      "Property": "★ Product"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7aa3d83d0a802ce49674",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Opportunity Owners"
+                        }
+                      },
+                      "Property": "★ Owner"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a32bc8d905ea6e752822",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Opportunity Owners"
+                        }
+                      },
+                      "Property": "★ Manager"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "2a33dcc80b1008ab5856",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Accounts"
+                        }
+                      },
+                      "Property": "State or Province"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "57a8dd0f1cc8d35490e3",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "Purchase Process"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "cd59c42f0c904013d010",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "Decision Maker Identified"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "8f6f08219951664a7346",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★Campaigns "
+                        }
+                      },
+                      "Property": "★ Campaign"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "754e40e065022e32d57d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★Campaigns "
+                        }
+                      },
+                      "Property": "★ Campaign Type"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9533a0406d3a202494a6",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Industries"
+                        }
+                      },
+                      "Property": "★Industry "
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "5f595ccb6d8c34804772",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Territories"
+                        }
+                      },
+                      "Property": "Territory"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "42cee191bc698d80b4ba",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Territories"
+                        }
+                      },
+                      "Property": "Region"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "keyDriversVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "Close %"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "ad4ce13d26c5bb39a36b": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "16a9180510e0c01c73a4",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Products"
+                        }
+                      },
+                      "Property": "★ Product Category"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a5d5c134198e98533dac",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "Revenue Won"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "Revenue Won"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Products"
+                        }
+                      },
+                      "Property": "★ Product Category"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "e6a11585e3733093d543": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "0a1f33503aa4ebbdb6c2",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "Opportunity Count"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "881f2da4b4441677ee45",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Opportunity Owners"
+                        }
+                      },
+                      "Property": "★ Owner"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "db58559580108000e236",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Opportunity Owners"
+                        }
+                      },
+                      "Property": "★ Manager"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "Opportunity Count"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Opportunity Owners"
+                        }
+                      },
+                      "Property": "★ Owner"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "8f2df320d40101594b8e": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "db7a98bb736dc59b8002",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "Opportunity Count"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "49d5ec5976820538eea3",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Territories"
+                        }
+                      },
+                      "Property": "Territory"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Opportunities"
+                        }
+                      },
+                      "Property": "Opportunity Count"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Territories"
+                        }
+                      },
+                      "Property": "Territory"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "827ff0500b790d5334a4": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e6364ba092e592437460",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Products"
+                        }
+                      },
+                      "Property": "★ Product"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "31e945a0d57abb02675a",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Products"
+                        }
+                      },
+                      "Property": "★ Product Category"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e0789f05802684239084",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Opportunities"
+                            }
+                          },
+                          "Property": "Value"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e6e062cc93c038acbb74",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Industries"
+                        }
+                      },
+                      "Property": "★Industry "
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9243a5b2ca669d34b0b9",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Territories"
+                        }
+                      },
+                      "Property": "Territory"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "da36377c12e55b7c93ba",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Opportunity Owners"
+                        }
+                      },
+                      "Property": "★ Owner"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "13b6a69084d4c29b0ec2",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★Campaigns "
+                        }
+                      },
+                      "Property": "★ Campaign"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ],
+              "byType": [
+                {
+                  "name": "Filter9eafa29b773622144b40",
+                  "type": "Exclude",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "c",
+                        "Entity": "★Campaigns ",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "c"
+                                        }
+                                      },
+                                      "Property": "★ Campaign"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "howCreated": 4,
+                  "filterExpressionMetadata": {
+                    "expressions": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Campaigns"
+                            }
+                          },
+                          "Property": "Campaign"
+                        }
+                      }
+                    ],
+                    "cachedValueItems": [
+                      {
+                        "identities": [
+                          {
+                            "scopeId": {
+                              "Comparison": {
+                                "ComparisonKind": 0,
+                                "Left": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Entity": "Campaigns"
+                                      }
+                                    },
+                                    "Property": "Campaign"
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "null"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ],
+                        "valueMap": {
+                          "0": "(Blank)"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "decompositionTreeVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Opportunities"
+                            }
+                          },
+                          "Property": "Value"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "ExplainBy": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Territories"
+                        }
+                      },
+                      "Property": "Territory"
+                    }
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Products"
+                        }
+                      },
+                      "Property": "★ Product Category"
+                    }
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "★ Products"
+                        }
+                      },
+                      "Property": "★ Product"
+                    }
+                  }
+                ]
+              },
+              "expansionStates": [
+                {
+                  "roles": [
+                    "ExplainBy"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "Territories.Territory"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "Territories"
+                              }
+                            },
+                            "Property": "Territory"
+                          }
+                        }
+                      ],
+                      "isPinned": true,
+                      "AIInformation": {
+                        "method": "MaxSplit",
+                        "disabled": false
+                      }
+                    },
+                    {
+                      "queryRefs": [
+                        "Products.Product LOB"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "★ Products"
+                              }
+                            },
+                            "Property": "★ Product Category"
+                          }
+                        }
+                      ],
+                      "isPinned": true,
+                      "AIInformation": {
+                        "method": "MaxSplit",
+                        "disabled": false
+                      }
+                    },
+                    {
+                      "queryRefs": [
+                        "Products.Product"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "★ Products"
+                              }
+                            },
+                            "Property": "★ Product"
+                          }
+                        }
+                      ],
+                      "isPinned": true,
+                      "AIInformation": {
+                        "method": "MaxSplit",
+                        "disabled": false
+                      }
+                    },
+                    {
+                      "queryRefs": [
+                        "Owners.Owner"
+                      ],
+                      "isCollapsed": true
+                    },
+                    {
+                      "queryRefs": [
+                        "Industries.Industry"
+                      ],
+                      "isCollapsed": true
+                    },
+                    {
+                      "queryRefs": [
+                        "Campaigns.Campaign"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "★Campaigns "
+                              }
+                            },
+                            "Property": "★ Campaign"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "root": {
+                    "identityValues": null,
+                    "children": [
+                      {
+                        "identityValues": [
+                          {
+                            "Literal": {
+                              "Value": "'South'"
+                            }
+                          }
+                        ],
+                        "isToggled": true,
+                        "children": [
+                          {
+                            "identityValues": [
+                              {
+                                "Literal": {
+                                  "Value": "'Devices'"
+                                }
+                              }
+                            ],
+                            "isToggled": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "add168b0532b8b7b33a2": {
+            "singleVisual": {
+              "visualType": "qnaVisual",
+              "objects": {
+                "merge": {
+                  "hiddenProperties": [
+                    {
+                      "properties": {
+                        "savedUtterance": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "''"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Accounts"
+                        }
+                      },
+                      "Property": "Industry"
+                    }
+                  }
+                }
+              ],
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "8dbd672455ffa15dc311": {
+            "singleVisual": {
+              "visualType": "bookmarkNavigator",
+              "objects": {}
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "15562d2f44b7cc635977": {
+            "isHidden": false
+          },
+          "58285abda545d240ced5": {
+            "isHidden": true,
+            "children": {
+              "f91fddb2447c5050466a": {
+                "isHidden": false
+              },
+              "bd369dadd666345655ec": {
+                "isHidden": false
+              }
+            }
+          },
+          "ba3cc2101a39bbc698d4": {
+            "isHidden": false,
+            "children": {
+              "3d3745d046b35a269ceb": {
+                "isHidden": true
+              },
+              "a1ff583105bead36d2b6": {
+                "isHidden": false
+              },
+              "1e8de3a6e0ba3300b029": {
+                "isHidden": true
+              }
+            }
+          },
+          "ea3f92fc00e022029521": {
+            "isHidden": true
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "visible": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

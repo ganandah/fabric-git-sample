@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "65dfdfbf882b39a37b4d",
+  "position": {
+    "x": 0,
+    "y": 17.682271680736761,
+    "z": 0,
+    "height": 683.86267515627264,
+    "width": 1243.1625752829564,
+    "tabOrder": -1
+  },
+  "visualGroup": {
+    "displayName": "Horizontal Guide",
+    "groupMode": "ScaleMode",
+    "objects": {
+      "background": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "parentGroupName": "23daf6749408b8389590"
+}

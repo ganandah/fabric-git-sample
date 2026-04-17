@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "ea3f92fc00e022029521",
+  "position": {
+    "x": 18,
+    "y": 122.630761263594,
+    "z": 2000,
+    "height": 579.369238736406,
+    "width": 1242.9331221367529,
+    "tabOrder": 1000
+  },
+  "visualGroup": {
+    "displayName": "Decomposition Tree",
+    "groupMode": "ScaleMode"
+  }
+}

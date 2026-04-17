@@ -1,0 +1,60 @@
+table Territories
+	lineageTag: 089a5508-12af-430f-9b54-1fb9c1e13443
+
+	column Region
+		dataType: string
+		lineageTag: 62e88eef-b4b6-4b0f-abb6-9fc0dae0ec8a
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column Territory
+		dataType: string
+		lineageTag: 5ebebdba-1de7-494e-8cce-d4eecfc5c536
+		summarizeBy: none
+		sourceColumn: Territory
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 5c728b57-ac73-4461-a4d5-4247f66e19c3
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column TerritorySeq
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 7cd29564-0bd2-40af-aa2e-7db720102ad0
+		summarizeBy: none
+		sourceColumn: TerritorySeq
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'State Or Province'
+		dataType: string
+		lineageTag: bf35fd98-fa0b-484e-951f-6fdf77c40390
+		summarizeBy: none
+		sourceColumn: State Or Province
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Territories-4b1da39b-43e4-4e4d-81e8-920523b22fe3 = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("nZZLT8MwEIT/SpVzkUji8jhGSSChtYPiPApVDxVEogdAKvn/wuNzJ9L6sFV7GO3r23EPh8j8XuavVfY9Xc4fp2gd9fZmLG2Hbz/nefpc2fk0T3/ud+wiz6Lj+qrINn1XXVElLrq9VJW6eNoxlWnariqzq1UqF+YtRLlx8Ur703VB5nLnoqa1ct29i6aSTubBxbN4C4+YSi6vMb51H7oOGWcMXsyLtNIYwAy0QVYngBnFKsCSvQd1B1q0eA8xYOlMwCJAS02FNB9w0UVAPhCjG7kwATEjJYapvLmEpAMuWjyXBLxYehBU5oGht05lgGUnt07AsqVexibifaUVJwMpzTbkFhKwknfCOlOA0lMVX3kKVmrpracAxQzihwigZOJppgBF24DmgMqWCpkKpBgdkA6wmFKaDqzU1FXoUMDJSFdAkilwUgU9Qco/QfSJXZR6X6GDWZQCmVbqgMoTQ8+BzVSBl4LWyTevgIwNeBmUR4YKmQrIZNReaHtApqA+vfh3DtwMUlfaAJnRee7xHw==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Region = _t, Territory = _t, Country = _t, TerritorySeq = _t, #"State Or Province" = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Region", type text}, {"Territory", type text}, {"Country", type text}, {"TerritorySeq", Int64.Type}, {"State Or Province", type text}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Changed Type","US-","",Replacer.ReplaceText,{"Territory"}),
+				    #"Capitalized Each Word" = Table.TransformColumns(#"Replaced Value",{{"Territory", Text.Proper, type text}})
+				in
+				    #"Capitalized Each Word"
+
+	annotation PBI_ResultType = Table
+

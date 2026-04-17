@@ -1,0 +1,12 @@
+relationship 99f6cedf-0d18-46ae-ba06-c1f41f07f8db
+	fromColumn: DimProduct.ProductSubcategoryKey
+	toColumn: DimProductSubcategory.ProductSubcategoryKey
+
+	annotation PBI_IsFromSource = FS
+
+relationship b1879e16-30bb-49a6-95bc-71d56a3b7d5b
+	fromColumn: DimProductSubcategory.ProductCategoryKey
+	toColumn: DimProductCategory.ProductCategoryKey
+
+	annotation PBI_IsFromSource = FS
+

@@ -1,0 +1,90 @@
+{
+  "properties": {
+    "jobMode": "Batch",
+    "source": {
+      "type": "AzureSqlTable",
+      "connectionSettings": {
+        "type": "AzureSqlDatabase",
+        "typeProperties": {
+          "database": "dbazsqldemoedhp"
+        },
+        "externalReferences": {
+          "connection": "d2bc9526-d662-4c58-9479-75eeb2cc9cf0"
+        }
+      }
+    },
+    "destination": {
+      "type": "LakehouseTable",
+      "connectionSettings": {
+        "type": "Lakehouse",
+        "typeProperties": {
+          "workspaceId": "c7068604-3ae0-4f7c-ae10-7391891697a9",
+          "artifactId": "45dcd9bf-5c3a-4319-a94b-dc278b7ba23a",
+          "rootFolder": "Tables"
+        },
+        "externalReferences": {
+          "connection": "bbc3d7aa-b1f1-42e4-a226-7a5dad6504af"
+        }
+      }
+    },
+    "policy": {
+      "timeout": "0.12:00:00"
+    }
+  },
+  "activities": [
+    {
+      "id": "6d2f10b1a15098",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "schema": "SalesLT",
+            "table": "ProductCategory"
+          }
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "table": "SalesLT_ProductCategory"
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "6d2f10b1a15098",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "schema": "SalesLT",
+            "table": "ProductDescription"
+          }
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "table": "SalesLT_ProductDescription"
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    }
+  ]
+}

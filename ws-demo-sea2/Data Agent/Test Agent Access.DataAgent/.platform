@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataAgent",
+    "displayName": "Test Agent Access"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "58cba8ce-7353-8779-4487-58493ec3acad"
+  }
+}

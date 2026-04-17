@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "ba3cc2101a39bbc698d4",
+  "position": {
+    "x": 17.554285714285687,
+    "y": 122.67631103074137,
+    "z": 8000,
+    "height": 579.49511754068726,
+    "width": 1243.9285352622062,
+    "tabOrder": 2000
+  },
+  "visualGroup": {
+    "displayName": "Key Influencers",
+    "groupMode": "ScaleMode"
+  },
+  "isHidden": true
+}

@@ -1,0 +1,211 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "ParquetSource",
+            "storeSettings": {
+              "type": "AzureBlobStorageReadSettings",
+              "recursive": false,
+              "wildcardFileName": "*.parquet"
+            },
+            "formatSettings": {
+              "type": "ParquetReadSettings"
+            },
+            "datasetSettings": {
+              "type": "Parquet",
+              "typeProperties": {
+                "location": {
+                  "type": "AzureBlobStorageLocation",
+                  "container": "mlsamples",
+                  "folderPath": "diabetes"
+                },
+                "compressionCodec": "snappy"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "diabetes",
+                "properties": {
+                  "type": "AzureBlobStorage",
+                  "typeProperties": {
+                    "authenticationType": "Anonymous",
+                    "containerUri": "https://azureopendatastorage.blob.core.windows.net/mlsamples"
+                  }
+                }
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "LakehouseTableSink",
+            "tableActionOption": "OverwriteSchema",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "diabetes"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "fabric_demolh",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "aff6e5dc-37bb-9b9b-4483-50e60d4a4bf0",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "mappings": [
+              {
+                "source": {
+                  "name": "AGE",
+                  "type": "Int64",
+                  "physicalType": "INT64"
+                },
+                "sink": {
+                  "name": "AGE",
+                  "physicalType": "long"
+                }
+              },
+              {
+                "source": {
+                  "name": "SEX",
+                  "type": "Int64",
+                  "physicalType": "INT64"
+                },
+                "sink": {
+                  "name": "SEX",
+                  "physicalType": "long"
+                }
+              },
+              {
+                "source": {
+                  "name": "BMI",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "BMI",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "BP",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "BP",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "S1",
+                  "type": "Int64",
+                  "physicalType": "INT64"
+                },
+                "sink": {
+                  "name": "S1",
+                  "physicalType": "long"
+                }
+              },
+              {
+                "source": {
+                  "name": "S2",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "S2",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "S3",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "S3",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "S4",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "S4",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "S5",
+                  "type": "Double",
+                  "physicalType": "DOUBLE"
+                },
+                "sink": {
+                  "name": "S5",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "S6",
+                  "type": "Int64",
+                  "physicalType": "INT64"
+                },
+                "sink": {
+                  "name": "S6",
+                  "physicalType": "long"
+                }
+              },
+              {
+                "source": {
+                  "name": "Y",
+                  "type": "Int64",
+                  "physicalType": "INT64"
+                },
+                "sink": {
+                  "name": "Y",
+                  "physicalType": "long"
+                }
+              }
+            ],
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          },
+          "enableStaging": false
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Copy_eno",
+        "dependsOn": []
+      }
+    ]
+  }
+}

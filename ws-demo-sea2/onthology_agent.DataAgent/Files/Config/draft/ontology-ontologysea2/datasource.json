@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "03eb307f-8ae5-891d-443d-95400fabefad",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "ontologysea2",
+  "type": "ontology",
+  "userDescription": null,
+  "metadata": {},
+  "elements": [
+    {
+      "id": "store",
+      "is_selected": true,
+      "display_name": "store",
+      "type": "ontology.entity",
+      "description": "StoreId,StoreName,City,Region,Latitude,Longitude",
+      "children": []
+    },
+    {
+      "id": "product",
+      "is_selected": true,
+      "display_name": "product",
+      "type": "ontology.entity",
+      "description": "ProductId,ProductName,Category,Subcategory,Brand",
+      "children": []
+    },
+    {
+      "id": "CalendarDate",
+      "is_selected": true,
+      "display_name": "CalendarDate",
+      "type": "ontology.entity",
+      "description": "Date,Year,Quarter,Month,Day",
+      "children": []
+    },
+    {
+      "id": "SaleEvent",
+      "is_selected": true,
+      "display_name": "SaleEvent",
+      "type": "ontology.entity",
+      "description": "SaleId,Date,StoreId,ProductId,Units,RevenueUSD",
+      "children": []
+    },
+    {
+      "id": "Freezer",
+      "is_selected": true,
+      "display_name": "Freezer",
+      "type": "ontology.entity",
+      "description": "FreezerId,timestamp,Model,temperatureC,minSafeTempC,humidityPct,StoreId,doorOpen",
+      "children": []
+    }
+  ]
+}

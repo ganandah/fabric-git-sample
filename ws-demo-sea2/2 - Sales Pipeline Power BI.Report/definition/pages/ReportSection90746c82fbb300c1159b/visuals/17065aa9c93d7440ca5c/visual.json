@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "17065aa9c93d7440ca5c",
+  "position": {
+    "x": 18,
+    "y": 227.68434670116432,
+    "z": 5000,
+    "height": 474.411384217335,
+    "width": 894.39327296248393,
+    "tabOrder": 2000
+  },
+  "visualGroup": {
+    "displayName": "Forecast Bookmark",
+    "groupMode": "ScaleMode"
+  }
+}

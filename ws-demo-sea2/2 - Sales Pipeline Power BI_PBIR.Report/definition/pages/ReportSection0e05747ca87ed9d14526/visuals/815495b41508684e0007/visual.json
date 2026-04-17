@@ -1,0 +1,165 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "815495b41508684e0007",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 1000,
+    "height": 54.671649759743723,
+    "width": 613.68926855312327,
+    "tabOrder": -1
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Close %:  "
+                  },
+                  {
+                    "value": "⬤",
+                    "textStyle": {
+                      "fontSize": "9.33333px",
+                      "color": "#f26f97"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontSize": "9.33333px",
+                      "color": "#0e74e1"
+                    }
+                  },
+                  {
+                    "value": "Bad  "
+                  },
+                  {
+                    "value": "⬤",
+                    "textStyle": {
+                      "fontSize": "9.33333px",
+                      "color": "#faba74"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontSize": "9.33333px",
+                      "color": "#0b57a9"
+                    }
+                  },
+                  {
+                    "value": "Fair  "
+                  },
+                  {
+                    "value": "⬤",
+                    "textStyle": {
+                      "fontSize": "9.33333px",
+                      "color": "#74ddbe"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontSize": "9.33333px",
+                      "color": "#0e74e1"
+                    }
+                  },
+                  {
+                    "value": "Good"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {}
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Revenue Won by Territory'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {}
+        }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "titleFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#AAADD0'"
+                    }
+                  }
+                }
+              }
+            },
+            "valueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#171831'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {}
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {}
+        }
+      ]
+    }
+  },
+  "parentGroupName": "0f69b290d169614a6c0c"
+}

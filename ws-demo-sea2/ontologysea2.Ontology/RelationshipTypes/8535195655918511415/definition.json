@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "8535195655918511415",
+  "name": "occursOn",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "108440709608028"
+  },
+  "target": {
+    "entityTypeId": "160123943798116"
+  }
+}

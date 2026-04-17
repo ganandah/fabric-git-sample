@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "8561425282093238151",
+  "name": "soldIn",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "230138160610164"
+  },
+  "target": {
+    "entityTypeId": "160123943798116"
+  }
+}

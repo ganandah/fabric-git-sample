@@ -1,0 +1,25 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["Accounts","Opportunities","★Campaigns ","★ Industries","★ Opportunity Owners","★ Products","Territories"]
+
+ref table Accounts
+ref table Opportunities
+ref table 'Opportunity Forecast Adjustment'
+ref table 'Opportunity Calendar'
+ref table '★Campaigns '
+ref table '★ Industries'
+ref table '★ Opportunity Owners'
+ref table '★ Products'
+ref table Territories
+ref table 'Opportunity Calendar (Created On)'
+
+ref cultureInfo en-US
+

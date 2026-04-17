@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "test copilot"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "cee6a74b-e9ae-baef-40d8-1f973ea7ec78"
+  }
+}

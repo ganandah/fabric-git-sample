@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "ReportSectiona11e37e385749d6ea970",
+  "displayName": "Tooltip 2",
+  "displayOption": "FitToPage",
+  "height": 260,
+  "width": 280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "Filter1b8034c54af31043b3f5",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "★ Products"
+              }
+            },
+            "Property": "★ Product"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "Pod",
+    "type": "Tooltip",
+    "parameters": [
+      {
+        "name": "Param_Filter1b8034c54af31043b3f5",
+        "boundFilter": "Filter1b8034c54af31043b3f5",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "★ Products"
+              }
+            },
+            "Property": "★ Product"
+          }
+        }
+      }
+    ]
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {}
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "type": "Tooltip"
+}

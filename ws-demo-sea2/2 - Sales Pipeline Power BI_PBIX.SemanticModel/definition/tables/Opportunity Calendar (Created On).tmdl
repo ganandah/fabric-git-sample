@@ -1,0 +1,127 @@
+table 'Opportunity Calendar (Created On)'
+	lineageTag: 65507a05-de31-461b-a958-fc421d43c277
+
+	column Date
+		isHidden
+		formatString: Short Date
+		lineageTag: 5d252ed0-679c-43c6-914f-5189d9596547
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		changedProperty = IsHidden
+
+		changedProperty = DataType
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Year Month #'
+		isHidden
+		formatString: 0
+		lineageTag: e9510019-00f8-438d-b27f-8e2602368112
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year Month #]
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created on Year Month'
+		lineageTag: 6af1c574-8598-4625-9b9b-d7ee60977298
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Created on Year Month]
+		sortByColumn: 'Year Month #'
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Opportunity Calendar (Created On)-2618885d-5bd0-414c-b5e5-dbc7e823af1b' = calculated
+		mode: import
+		source = ```
+				
+				VAR StartDate =
+				    DATE ( YEAR ( MIN ( Opportunities[Close date] ) )-1, 1, 1 )
+				VAR EndDate =
+				    DATE ( YEAR (
+				        IF (
+				            ISBLANK ( MAX ( Opportunities[Close date] ) ),
+				            TODAY (),
+				            MAX ( Opportunities[Close date] )
+				        ) + 1
+				    ), 12, 31 )
+				VAR BASECALENDAR =
+				    CALENDAR ( StartDate, EndDate )
+				
+				VAR FiscalCalendarFirstMonth = 10 
+				VAR OffsetFiscalYear = IF ( FiscalCalendarFirstMonth > 1, 1, 0 )
+				VAR TypeStartFiscalYear = 1 -- Fiscal year as Calendar Year of : 0 - First day of fiscal year, 1 - Last day of fiscal year
+				
+				
+				RETURN
+				    GENERATE (
+				        BASECALENDAR,
+				        VAR DateSequence = DATEDIFF ( StartDate, [DATE], DAY ) + 1
+				        VAR BASEDATE = [DATE]
+				        VAR YEARDATE = YEAR ( BASEDATE )
+				        VAR MONTHNUMBER = MONTH ( BASEDATE )
+				        VAR MONTHNAME = FORMAT ( BASEDATE, "MMMM" )
+				        VAR YEARMONTHNAME = FORMAT ( BASEDATE, "MMM YYYY" )
+				        VAR YEARMONTHNUMBER = YEARDATE * 12 + ( MONTHNUMBER - 1 )
+				        VAR YEARWEEK = YEARDATE & "-W" & RIGHT ( "0" & WEEKNUM ( BASEDATE ), 2 )
+				        VAR DayNumberOfWeek = WEEKDAY ( [Date] )
+				        VAR StartOfWeek = [Date] - ( 1 * DayNumberOfWeek )
+				        VAR StartOfRelativeWeek = [Date] - WEEKDAY ( [Date] ) + 1
+				        VAR StartOfCurrentWeek = TODAY () - WEEKDAY ( TODAY () ) + 1
+				        VAR RelativeYear = DATEDIFF(TODAY(),[Date],YEAR)
+				        VAR RelativeMonth = DATEDIFF(TODAY(),[Date],MONTH)
+				        VAR RelativeWeek = ( StartOfRelativeWeek - StartOfCurrentWeek ) / 7
+				        VAR RelativeDay = BASEDATE - TODAY()
+				        VAR Relative7DayPeriod = ROUNDDOWN(([Date] - TODAY())/7,0) + IF([Date]<TODAY(),+1,+2)
+				        VAR Relative30DayPeriod = ROUNDDOWN(([Date] - TODAY())/30,0) + IF([Date]>TODAY(),1,0)   
+				        VAR Relative365DayPeriod = ROUNDDOWN(([Date] - TODAY())/365,0) + IF([Date]>TODAY(),1,0)   
+				        VAR FiscalYearNumber = IF.EAGER(MONTHNUMBER >= FiscalCalendarFirstMonth, YEARDATE + (OffsetFiscalYear * TypeStartFiscalYear), YEARDATE )
+				        VAR QuarterNumber = QUARTER(DATE(YEARDATE, MOD(MONTH(BASEDATE)-FiscalCalendarFirstMonth,12)+1,1))
+				        VAR FiscalYearQuarter = "FY-"&RIGHT(FiscalYearNumber,2) & " Q" & QuarterNumber
+				
+				        
+				
+				        RETURN
+				            ROW (
+				--                "DaySeq", DateSequence,
+				--                "Year", YEARDATE,
+				--                "Month #", MONTHNUMBER,
+				--                "Month", MONTHNAME,
+				                "Year Month #", YEARMONTHNUMBER,
+				                "Created on Year Month", YEARMONTHNAME
+				/*
+				                ,
+				                "Year Week", YEARWEEK,
+				                "Week", StartOfWeek,
+				                "Relative Year", RelativeYear,
+				                "Relative Month", RelativeMonth,
+				                "Relative Week", RelativeWeek,
+				                "Relative Day", RelativeDay,
+				                "Relative 7 Day Period", Relative7DayPeriod,
+				                "Relative 30 Day Period", Relative30DayPeriod,
+				                "Relative 365 Day Period", Relative365DayPeriod,
+				                "Fiscal Year", "FY-" & RIGHT(FiscalYearNumber,2),
+				                "Fiscal Quarter", "Q" & QuarterNumber,
+				                "Fiscal Year Quarter", FiscalYearQuarter
+				*/
+				                )
+				            )
+				```
+
+	changedProperty = IsHidden
+
+	annotation PBI_Id = 21914f0f0e294451a1ea4193ad84c099
+

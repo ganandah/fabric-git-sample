@@ -1,0 +1,76 @@
+table DimProductSubcategory
+	lineageTag: 0e33d313-b7f6-4e7c-be95-afe2b8600d4d
+
+	column ProductSubcategoryKey
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 6e81dbad-90c5-47b2-a14e-b82b25dc1e44
+		summarizeBy: none
+		sourceColumn: ProductSubcategoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductSubcategoryAlternateKey
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: b113e40a-0364-4508-b80f-5f8448807071
+		summarizeBy: count
+		sourceColumn: ProductSubcategoryAlternateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnglishProductSubcategoryName
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(50)
+		lineageTag: 01511304-5e8f-449e-9480-8138b0fc1ad2
+		summarizeBy: none
+		sourceColumn: EnglishProductSubcategoryName
+
+		annotation SummarizationSetBy = Automatic
+
+	column SpanishProductSubcategoryName
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(50)
+		lineageTag: 7c03b0a6-28d1-47ce-9f97-e9cf8f4a87ff
+		summarizeBy: none
+		sourceColumn: SpanishProductSubcategoryName
+
+		annotation SummarizationSetBy = Automatic
+
+	column FrenchProductSubcategoryName
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(50)
+		lineageTag: 4fa99850-27f5-4d81-aea1-bb63734d8c99
+		summarizeBy: none
+		sourceColumn: FrenchProductSubcategoryName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductCategoryKey
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 840bd7cb-5c33-4b1d-9473-2176d13c32b7
+		summarizeBy: none
+		sourceColumn: ProductCategoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimProductSubcategory = m
+		mode: directQuery
+		source =
+				let
+				    Source = Sql.Databases("GAHAYARD-PC\SQL2022ent"),
+				    AdventureWorksDW2022 = Source{[Name="AdventureWorksDW2022"]}[Data],
+				    dbo_DimProductSubcategory = AdventureWorksDW2022{[Schema="dbo",Item="DimProductSubcategory"]}[Data]
+				in
+				    dbo_DimProductSubcategory
+
+	annotation PBI_ResultType = Table
+

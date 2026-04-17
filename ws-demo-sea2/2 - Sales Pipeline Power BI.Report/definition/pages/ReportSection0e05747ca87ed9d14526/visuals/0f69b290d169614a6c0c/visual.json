@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "0f69b290d169614a6c0c",
+  "position": {
+    "x": 18.451681793913508,
+    "y": 227.57074212493325,
+    "z": 2000,
+    "height": 474.2765616657768,
+    "width": 613.68926855312327,
+    "tabOrder": 1000
+  },
+  "visualGroup": {
+    "displayName": "Play Axis",
+    "groupMode": "ScaleMode"
+  }
+}

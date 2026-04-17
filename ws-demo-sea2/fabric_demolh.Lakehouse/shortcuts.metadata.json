@@ -1,0 +1,14 @@
+[
+  {
+    "name": "data",
+    "path": "/Files",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "5aa198a9-0a1a-41fa-8469-f02e5be28245",
+        "location": "https://ghstorfabdata.dfs.core.windows.net",
+        "subpath": "/data"
+      }
+    }
+  }
+]

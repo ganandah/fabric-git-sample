@@ -1,0 +1,55 @@
+table '★ Products'
+	lineageTag: 2707e423-483b-464c-a15a-3ea189ff4a86
+
+	column '★ Product'
+		dataType: string
+		lineageTag: 54a687b0-988a-42c2-a56c-b69f085a603e
+		summarizeBy: none
+		sourceColumn: ★ Product
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductSeq
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: fcf8b918-01d2-49bf-8a05-5d1741c596c4
+		summarizeBy: none
+		sourceColumn: ProductSeq
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column '★ Product Category'
+		dataType: string
+		lineageTag: 5bef1a9c-f537-4803-9b4a-b20d2d2e35b7
+		summarizeBy: none
+		sourceColumn: ★ Product Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column '★ Links'
+		dataType: string
+		isHidden
+		lineageTag: 4a9f1b6f-d260-4eb6-8d04-9fe1a26f83b0
+		dataCategory: ImageUrl
+		summarizeBy: none
+		sourceColumn: ★ Links
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '★ Products-247be151-9e40-4193-bacb-7883e5c52928' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("nZLRasIwFIZfJfTaeUyaJu3uFG1hMBwMFHVeZG1WO21a007onn5nq7iBY6O9+OEkhO87P2SzcWY3VqtEW/JYK5MomxDx5BCfRBNn4FDMVJ+yWFc47eq6rG4Bslyl2bu2w89BVzsV74dxkeN9GjAGnFEO6/F6f78YliZ1toMflmmm8sIkRH5LWHcJB08KAXQ8N8nybwkVrcXtVYVKBrMifF3Ia8vDQdWZecuJjxqXtRrep4wfeKg5Clms/tEI3mq87hoXWDCCavRCw+hioWSllSVLZa0ydYMsgTkfsy4dJBUSjvMmivbXHUptkCQx4xhXrgrbgc2ACjqCsAnTXX5hTw74iMTFCfH4YxHm98O7ILn04Phc1rX/K15+4YPe2/uegLt5Y3jZ4rcf", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Product = _t, ProductSeq = _t, #"Product Category" = _t, Links = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Product", type text}, {"ProductSeq", Int64.Type}, {"Product Category", type text}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Product", "★ Product"}, {"ProductSeq", "ProductSeq"}, {"Product Category", "★ Product Category"}, {"Links", "★ Links"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_ResultType = Table
+

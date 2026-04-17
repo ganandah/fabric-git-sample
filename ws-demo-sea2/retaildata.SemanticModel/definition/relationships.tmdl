@@ -1,0 +1,12 @@
+relationship c184d3e1-f415-5aaa-a7e6-3976fdc87e56
+	fromColumn: fact_sale.CityKey
+	toColumn: dim_city.CityKey
+
+relationship 4ec8561a-33d6-87d8-a2a8-bfb1584fa747
+	fromColumn: fact_sale.CustomerKey
+	toColumn: dimension_customer.CustomerKey
+
+relationship a478cb31-0249-04f6-40de-55d649ddf48b
+	fromColumn: fact_sale.DeliveryDateKey
+	toColumn: dim_date.Date
+

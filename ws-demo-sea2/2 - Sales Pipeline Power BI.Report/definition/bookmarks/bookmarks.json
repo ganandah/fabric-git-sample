@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmarksMetadata/1.0.0/schema.json",
+  "items": [
+    {
+      "name": "Bookmark4fb111909d934bc59410",
+      "displayName": "Overview",
+      "children": [
+        "Bookmark8cc27bf331507c406239",
+        "Bookmark9e82adba05410a65596b"
+      ]
+    },
+    {
+      "name": "Bookmark2c793ff559a00d8b8190",
+      "displayName": "Insights",
+      "children": [
+        "Bookmark7d95493c071b035d5c68",
+        "Bookmark2e86d46b55ebc85e2eb0",
+        "Bookmarkb5073aab0957917049cc"
+      ]
+    },
+    {
+      "name": "Bookmarke5bb24a10094b8cc02ee",
+      "displayName": "Insights - Key Influencers",
+      "children": [
+        "Bookmark90caa71e20a36c45bb6c",
+        "Bookmarkc8c50c205523c12eec7a",
+        "Bookmark6766c2995d71932b5e50"
+      ]
+    },
+    {
+      "name": "Bookmark5b7ff1fb7245d8f5fee9",
+      "displayName": "Revenue Account",
+      "children": [
+        "Bookmark840dd1bb6e6e1c65dfa0",
+        "Bookmark658c3b5558cbbc9a9ce3"
+      ]
+    },
+    {
+      "name": "Bookmark9a640312191ddfa4e00b",
+      "displayName": "Revenue Owner",
+      "children": [
+        "Bookmarkab3e94fd78ff7c55f965",
+        "Bookmarkdff6f54f12a41c559853"
+      ]
+    }
+  ]
+}

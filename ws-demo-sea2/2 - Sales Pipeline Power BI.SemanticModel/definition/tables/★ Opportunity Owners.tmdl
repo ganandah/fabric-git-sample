@@ -1,0 +1,54 @@
+table '★ Opportunity Owners'
+	lineageTag: 5f7959c1-696d-40cc-9637-0f5db24b9d5d
+
+	column '★ Owner'
+		dataType: string
+		lineageTag: c91b3dee-ff63-4f51-b4b8-afa8490cd97d
+		summarizeBy: none
+		sourceColumn: ★ Owner
+
+		annotation SummarizationSetBy = Automatic
+
+	column '★ Manager'
+		dataType: string
+		lineageTag: b78c7f8e-1fe1-4281-a66f-baee7f3e90c2
+		summarizeBy: none
+		sourceColumn: ★ Manager
+
+		annotation SummarizationSetBy = Automatic
+
+	column SystemUserSeq
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: c0c01fb8-a477-4500-a854-45246cd28c47
+		summarizeBy: none
+		sourceColumn: SystemUserSeq
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column systemuserid
+		dataType: string
+		isHidden
+		lineageTag: 6e0d56c2-0801-4b46-af05-1b2829dd3070
+		summarizeBy: none
+		sourceColumn: systemuserid
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '★ Opportunity Owners-affcec24-5bdb-4d4d-a436-f3a6eff7546a' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("jdTLahsxFAbgVxFeR6DbXLR02uDUNFDsghchC410lFE9lsLYbpi375ELpbRiJgsZtDgf8q9/9Py8Wg/BBkO+9+nUwbi6W61PMAQgGzPG257jMqpqqrbSFDwHCh3n1LRcUcaYk0bbxnuxernLmolkf4EQi5bAVRmou87azMxbMQI5QBiKlMQFCrQ2bUVBzlOfzc/gyD4VHIXLCyZq64D6BWczwis5hHi+pFiwquxJ1ljNDPXVvLU38YeZyL43fYGq81+sOwad4RSWqDeIFkbyNb0XqCZfolO8UUZ+IKlIttfTG848XHrc3I8pHc+4bfOJhFBadHgiNc88jMGSzXj9Xal/JJ2bIGzValZRB/PSFrwnj2b6n+Es/3CptfaaOrfgXIeA01/OgylQ/HYk5zBpQX07Tz2lYZjIp8GMxwKVO85tzTTzkrae2z+U/JsyN2oHEQDvreDkgmsrfSOtXsx7HV9hyMPvuZffYMKCktz6G5U73taMg2aCwkJQ69H2WJ/7NA1QsHLHpZeVs8YtFvMRk0JrB3AuULnjdd02louOer7UgxiDx5IfwnDEL7Dg5aIr3tWt6NxiYts0OswbNezFqcTlwivhMC+cX0rtCd9QfPegmFkuvLdWf0ja4YM3kW3q4zkVLlPk1oNtQEmA+dRefgE=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Owner = _t, Manager = _t, SystemUserSeq = _t, systemuserid = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Owner", type text}, {"Manager", type text}, {"SystemUserSeq", Int64.Type}, {"systemuserid", type text}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Manager", "★ Manager"}, {"Owner", "★ Owner"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_ResultType = Table
+

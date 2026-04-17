@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"type\":2,\"version\":\"5.59\"}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "fec946533f360a978f3b",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"eda32bac2e84c49c946c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":244.2758138482736,\"y\":0,\"z\":0,\"width\":747.9893886112653,\"height\":719.3501552635367,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"DimProductCategory.EnglishProductCategoryName\"},{\"queryRef\":\"DimProductSubcategory.EnglishProductSubcategoryName\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimProductCategory\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"DimProductSubcategory\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"EnglishProductCategoryName\"},\"Name\":\"DimProductCategory.EnglishProductCategoryName\",\"NativeReferenceName\":\"EnglishProductCategoryName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"EnglishProductSubcategoryName\"},\"Name\":\"DimProductSubcategory.EnglishProductSubcategoryName\",\"NativeReferenceName\":\"EnglishProductSubcategoryName\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 719.35,
+          "width": 747.99,
+          "x": 244.28,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

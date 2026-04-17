@@ -1,0 +1,34 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "8985a61a7692e3fc1b54",
+  "position": {
+    "x": 0.26252158894646982,
+    "y": 441.29706390328147,
+    "z": 1000,
+    "height": 33,
+    "width": 614,
+    "tabOrder": -1
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Right click on any account name and Drill-Through to view more details. "
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "d77a7db0392cc6bd2fbe"
+}

@@ -1,0 +1,66 @@
+table DimProductCategory
+	lineageTag: d757b774-3008-412f-9600-ed444326708e
+
+	column ProductCategoryKey
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 54244b36-8cac-4ccf-916d-140abb82db82
+		summarizeBy: none
+		sourceColumn: ProductCategoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductCategoryAlternateKey
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 81580d8f-958d-4933-8de4-31033b927d3f
+		summarizeBy: none
+		sourceColumn: ProductCategoryAlternateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnglishProductCategoryName
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(50)
+		lineageTag: bfc31658-9b23-4f2d-9f18-a23dcd9c08a7
+		summarizeBy: none
+		sourceColumn: EnglishProductCategoryName
+
+		annotation SummarizationSetBy = Automatic
+
+	column SpanishProductCategoryName
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(50)
+		lineageTag: ac8c849c-a471-4305-adf9-fc4426fc52c4
+		summarizeBy: none
+		sourceColumn: SpanishProductCategoryName
+
+		annotation SummarizationSetBy = Automatic
+
+	column FrenchProductCategoryName
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(50)
+		lineageTag: ca6f47b8-a61d-4b42-93a5-1f6e2165384b
+		summarizeBy: none
+		sourceColumn: FrenchProductCategoryName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimProductCategory = m
+		mode: directQuery
+		source =
+				let
+				    Source = Sql.Databases("GAHAYARD-PC\SQL2022ent"),
+				    AdventureWorksDW2022 = Source{[Name="AdventureWorksDW2022"]}[Data],
+				    dbo_DimProductCategory = AdventureWorksDW2022{[Schema="dbo",Item="DimProductCategory"]}[Data]
+				in
+				    dbo_DimProductCategory
+
+	annotation PBI_ResultType = Table
+

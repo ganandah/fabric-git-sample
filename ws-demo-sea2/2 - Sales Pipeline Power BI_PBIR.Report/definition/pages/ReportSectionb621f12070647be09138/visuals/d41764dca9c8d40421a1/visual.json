@@ -1,0 +1,190 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "d41764dca9c8d40421a1",
+  "position": {
+    "x": 17.723076923076924,
+    "y": 455.87692307692305,
+    "z": 6000,
+    "height": 52.184615384615384,
+    "width": 403.69230769230768,
+    "tabOrder": -1001
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Amount in Pipeline: Low  "
+                  },
+                  {
+                    "value": "⬤",
+                    "textStyle": {
+                      "fontSize": "9.33333px",
+                      "color": "#9fc7f3"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontSize": "9.33333px",
+                      "color": "#0e74e1"
+                    }
+                  },
+                  {
+                    "value": "⬤",
+                    "textStyle": {
+                      "fontSize": "9.33333px",
+                      "color": "#6eaced"
+                    }
+                  },
+                  {
+                    "value": " ⬤ ",
+                    "textStyle": {
+                      "fontSize": "9.33333px",
+                      "color": "#0e74e1"
+                    }
+                  },
+                  {
+                    "value": "⬤",
+                    "textStyle": {
+                      "fontSize": "9.33333px",
+                      "color": "#0b57a9"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontSize": "9.33333px",
+                      "color": "#0e74e1"
+                    }
+                  },
+                  {
+                    "value": "⬤",
+                    "textStyle": {
+                      "fontSize": "9.33333px",
+                      "color": "#2c2959"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontSize": "8pt",
+                      "color": "#000000"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontSize": "8pt",
+                      "color": "#aaabb6"
+                    }
+                  },
+                  {
+                    "value": "High",
+                    "textStyle": {
+                      "fontSize": "8pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {}
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Qualified Pipeline by Territory'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {}
+        }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "titleFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#AAADD0'"
+                    }
+                  }
+                }
+              }
+            },
+            "valueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#171831'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {}
+        }
+      ]
+    }
+  }
+}

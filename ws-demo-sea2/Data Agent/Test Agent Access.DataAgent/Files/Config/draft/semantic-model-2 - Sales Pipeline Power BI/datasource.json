@@ -1,0 +1,680 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "bf2a8eca-8da0-aac8-475d-02c663ec134a",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "2 - Sales Pipeline Power BI",
+  "type": "semantic_model",
+  "userDescription": null,
+  "metadata": {
+    "csdl_relationships": "[{\"FromTable\":\"Accounts\",\"FromColumn\":\"IndustrySeq\",\"ToTable\":\"v__Industries\",\"ToColumn\":\"IndustrySeq\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Accounts\",\"FromColumn\":\"State_or_Province\",\"ToTable\":\"Territories\",\"ToColumn\":\"State_Or_Province\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Opportunities\",\"FromColumn\":\"AccountSeq\",\"ToTable\":\"Accounts\",\"ToColumn\":\"AccountSeq\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Opportunities\",\"FromColumn\":\"CampaignSeq\",\"ToTable\":\"v_Campaigns_\",\"ToColumn\":\"CampaignSeq\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Opportunities\",\"FromColumn\":\"SystemUserSeq\",\"ToTable\":\"v__Opportunity_Owners\",\"ToColumn\":\"SystemUserSeq\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Opportunities\",\"FromColumn\":\"ProductSeq\",\"ToTable\":\"v__Products\",\"ToColumn\":\"ProductSeq\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Opportunities\",\"FromColumn\":\"Opportunity_Created_On\",\"ToTable\":\"Opportunity_Calendar__Created_On_\",\"ToColumn\":\"Date\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"},{\"FromTable\":\"Opportunities\",\"FromColumn\":\"Close_date\",\"ToTable\":\"Opportunity_Calendar\",\"ToColumn\":\"Date\",\"IsActive\":true,\"IsBidirectional\":false,\"Cardinality\":\"ManyToOne\"}]"
+  },
+  "elements": [
+    {
+      "id": "22d72ed3-5ee0-4ff1-98ec-c82153839a11",
+      "is_selected": false,
+      "display_name": "Accounts",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "3cc966b9-42cc-4fdc-af3e-169dbd480556",
+          "is_selected": true,
+          "display_name": "Account Name",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9cd3b557-bebd-4d36-8435-56a6f0b45aef",
+          "is_selected": true,
+          "display_name": "State or Province",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "faed6422-f3cb-4296-8a3c-2f05b5dbdf5f",
+          "is_selected": true,
+          "display_name": "Country",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "629b3a4b-d0b0-4de6-9df4-43d950732fad",
+          "is_selected": true,
+          "display_name": "Account Number",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "574e7ea3-1c8d-44ef-8571-714b66f865c7",
+      "is_selected": false,
+      "display_name": "Opportunities",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "00abd866-3af0-434f-8635-f746c83e5694",
+          "is_selected": true,
+          "display_name": "Purchase Process",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "70e6bcc8-4f3b-44c9-a8fd-c6ab1dc077e3",
+          "is_selected": true,
+          "display_name": "Decision Maker Identified",
+          "type": "semantic_model.column",
+          "data_type": "Boolean",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "f9b0d395-092e-4efb-9bac-3e9c3e90267c",
+          "is_selected": true,
+          "display_name": "Status",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "306e46c3-251b-4fb0-852e-2a4a1fe836e8",
+          "is_selected": true,
+          "display_name": "Weeks Open",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "7dee90ec-9e9f-482c-886d-27ad10f69ca9",
+          "is_selected": true,
+          "display_name": "Discount",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5e2b16c7-e253-45ab-b986-dc70108d374b",
+          "is_selected": true,
+          "display_name": "Probability",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "04da9d56-63a7-4837-8b29-3a0af0bd068a",
+          "is_selected": true,
+          "display_name": "Rating",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "4f4a0d24-8d74-4d68-94cc-c673541c22dd",
+          "is_selected": true,
+          "display_name": "Days Remaining In Pipeline",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "39addb4e-e78a-458d-8185-3af92a86f7d2",
+          "is_selected": true,
+          "display_name": "Opportunity Created On",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "cef7bbcf-416e-473e-8910-87a662b5d79a",
+          "is_selected": true,
+          "display_name": "Close date",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "258d9f98-7e9a-4bb8-8238-fe8de818b99a",
+          "is_selected": true,
+          "display_name": "Days Remaining In Pipeline (bins)",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b7791935-f088-4b13-95c8-fc541e428fe1",
+          "is_selected": true,
+          "display_name": "Sales Stage",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "fd85df42-d3de-401a-8892-bf9f2ae680de",
+          "is_selected": true,
+          "display_name": "Days Open",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "db83ad10-7429-46be-b5df-082b701f0291",
+          "is_selected": true,
+          "display_name": "Opportunity Number",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "4175e2ae-8428-461a-854b-9a68cf5b5b8c",
+          "is_selected": true,
+          "display_name": "Revenue Won",
+          "type": "semantic_model.measure",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "1322f812-7712-498e-9f4d-ba6b80052388",
+          "is_selected": true,
+          "display_name": "Revenue In Pipeline",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "78a5c219-6674-49f8-a2c5-4da21114763d",
+          "is_selected": true,
+          "display_name": "Forecast %",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "f3eb5c0a-9667-445a-b762-e4e9f911c533",
+          "is_selected": true,
+          "display_name": "Forecast",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b4effa85-1aa3-4f33-a3ef-07ec57b59c0f",
+          "is_selected": true,
+          "display_name": "Opportunity Count In Pipeline",
+          "type": "semantic_model.measure",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "f9cdd5b7-71b0-42ca-b100-d957cbdaa375",
+          "is_selected": true,
+          "display_name": "Opportunity Count",
+          "type": "semantic_model.measure",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "61908284-58b6-4ce1-b980-2cd65b89fafd",
+          "is_selected": true,
+          "display_name": "Count of Won",
+          "type": "semantic_model.measure",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "0995fcc4-bb40-4d35-aac9-9ecf60f69bbe",
+          "is_selected": true,
+          "display_name": "Count of Lost",
+          "type": "semantic_model.measure",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "938be727-4972-4ef9-a507-da6a1d898703",
+          "is_selected": true,
+          "display_name": "Close %",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d8ffa47c-94b4-4585-9170-43b31ec2dd1d",
+          "is_selected": true,
+          "display_name": "Revenue Open",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "959e44c7-e496-4ebb-8687-668c3c16f605",
+          "is_selected": true,
+          "display_name": "Revenue Won Average Deal Size",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "25b97fa8-199c-498f-9c14-f5e7d8cbb022",
+          "is_selected": true,
+          "display_name": "Forecast by Win/Loss Ratio",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "fc83e054-2114-4326-ae63-f0b2a1f0daff",
+          "is_selected": true,
+          "display_name": "AVG Days to Close",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "3cd274e0-076f-46e7-b6f2-3d9f5312d8f2",
+          "is_selected": true,
+          "display_name": "Rev Goal",
+          "type": "semantic_model.measure",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5d814897-7599-40a1-9dfc-4a61042c2c3a",
+          "is_selected": true,
+          "display_name": "Revenue Won - MoM %",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d5538591-9b31-4520-8434-12b904816180",
+          "is_selected": true,
+          "display_name": "Opportunities Created - MoM % Change",
+          "type": "semantic_model.measure",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "234108f0-185a-4870-ad95-73cc7499113a",
+          "is_selected": true,
+          "display_name": "Opportunities Created",
+          "type": "semantic_model.measure",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2218a695-b4e6-427a-a9cd-00bdda86b3da",
+          "is_selected": true,
+          "display_name": "Count of Open",
+          "type": "semantic_model.measure",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "50bae5c7-70dc-4542-81d2-8cffdb6f465e",
+      "is_selected": false,
+      "display_name": "Opportunity Calendar",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "596a61c0-1c6a-45dc-835f-b9dcb417c739",
+          "is_selected": true,
+          "display_name": "Date",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "eafd76ed-2181-4b8a-bafb-fe8c9b8ebd22",
+          "is_selected": true,
+          "display_name": "Year",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c1061583-ad00-4c81-9fd3-550aca9951ca",
+          "is_selected": true,
+          "display_name": "Month",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "1eb88449-338e-490c-b19c-567811150461",
+          "is_selected": true,
+          "display_name": "Year Month",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "6fac8f80-d90b-4039-a915-9840ea96b347",
+          "is_selected": true,
+          "display_name": "Year Week",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "1ee6805e-ab65-4866-8ea4-8723ae1df197",
+          "is_selected": true,
+          "display_name": "Week",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5ea3ae3e-b9c4-457c-b412-625af7eea29b",
+          "is_selected": true,
+          "display_name": "Relative Week",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "65897efe-ceef-4365-b785-0873cf27028e",
+          "is_selected": true,
+          "display_name": "Relative Day",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e7faa457-dda8-4403-99f6-626b49623a3d",
+          "is_selected": true,
+          "display_name": "Relative 30 Day Period",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e3da9c05-7873-4a46-8d92-6f49b6e3f3c7",
+          "is_selected": true,
+          "display_name": "Relative Month",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "deecacf8-8c41-4d6f-b3db-a5711c764153",
+          "is_selected": true,
+          "display_name": "Relative Year",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "691921fa-33da-488c-b600-bb5a2708d68e",
+          "is_selected": true,
+          "display_name": "Relative 7 Day Period",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "164443f4-1d6f-4c8a-9b33-91592117fe91",
+          "is_selected": true,
+          "display_name": "Relative 365 Day Period",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e2a0fe22-319e-4fef-a9b6-d11ca30b4dd8",
+          "is_selected": true,
+          "display_name": "Fiscal Year",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "66d85e0b-7c74-40e1-9e44-bcffb03699fe",
+          "is_selected": true,
+          "display_name": "Fiscal Quarter",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b3838d60-7ac6-49df-9cc4-17794537c95e",
+          "is_selected": true,
+          "display_name": "Fiscal Year Quarter",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "754e5de5-cecf-418a-a576-94426ffa190b",
+          "is_selected": true,
+          "display_name": "MonthSort",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "c224dbcf-ae4a-4ed1-aa12-90dc2b0c05b4",
+      "is_selected": false,
+      "display_name": "★Campaigns ",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "ee3b0b3c-9c23-4183-bc5a-063b492eed3a",
+          "is_selected": true,
+          "display_name": "★ Campaign Type",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "71e61d50-7670-44c5-a072-93d8c76c3e1c",
+          "is_selected": true,
+          "display_name": "★ Campaign",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "ed1edcf9-dce1-436c-a2c3-fc0e1af596a1",
+      "is_selected": false,
+      "display_name": "★ Industries",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "e6047506-ab58-418b-89ca-902a4e4336a8",
+          "is_selected": true,
+          "display_name": "★Industry ",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "5f7959c1-696d-40cc-9637-0f5db24b9d5d",
+      "is_selected": false,
+      "display_name": "★ Opportunity Owners",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "c91b3dee-ff63-4f51-b4b8-afa8490cd97d",
+          "is_selected": true,
+          "display_name": "★ Owner",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b78c7f8e-1fe1-4281-a66f-baee7f3e90c2",
+          "is_selected": true,
+          "display_name": "★ Manager",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "2707e423-483b-464c-a15a-3ea189ff4a86",
+      "is_selected": false,
+      "display_name": "★ Products",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "54a687b0-988a-42c2-a56c-b69f085a603e",
+          "is_selected": true,
+          "display_name": "★ Product",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5bef1a9c-f537-4803-9b4a-b20d2d2e35b7",
+          "is_selected": true,
+          "display_name": "★ Product Category",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "089a5508-12af-430f-9b54-1fb9c1e13443",
+      "is_selected": false,
+      "display_name": "Territories",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "62e88eef-b4b6-4b0f-abb6-9fc0dae0ec8a",
+          "is_selected": true,
+          "display_name": "Region",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5ebebdba-1de7-494e-8cce-d4eecfc5c536",
+          "is_selected": true,
+          "display_name": "Territory",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5c728b57-ac73-4461-a4d5-4247f66e19c3",
+          "is_selected": true,
+          "display_name": "Country",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "bf35fd98-fa0b-484e-951f-6fdf77c40390",
+          "is_selected": true,
+          "display_name": "State Or Province",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "65507a05-de31-461b-a958-fc421d43c277",
+      "is_selected": false,
+      "display_name": "Opportunity Calendar (Created On)",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "6af1c574-8598-4625-9b9b-d7ee60977298",
+          "is_selected": true,
+          "display_name": "Created on Year Month",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

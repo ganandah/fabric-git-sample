@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "5015884185650008921",
+  "name": "operates",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "244793834196054"
+  },
+  "target": {
+    "entityTypeId": "263759500689507"
+  }
+}

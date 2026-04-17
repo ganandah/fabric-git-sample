@@ -1,0 +1,35 @@
+table '★ Industries'
+	lineageTag: ed1edcf9-dce1-436c-a2c3-fc0e1af596a1
+
+	column '★Industry '
+		dataType: string
+		lineageTag: e6047506-ab58-418b-89ca-902a4e4336a8
+		summarizeBy: none
+		sourceColumn: "★Industry "
+
+		annotation SummarizationSetBy = Automatic
+
+	column IndustrySeq
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e7413b66-db87-432a-a5f3-764bbc8cf47b
+		summarizeBy: none
+		sourceColumn: IndustrySeq
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '★ Industries-b83448a5-960c-485d-9f9d-bedf672af4fe' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("dZRNcxoxDIb/iodzOksWAmluBEibmdIwgUwPaQ6uV7Budu2tP+jw7ytZhi6d6Q38vpalR9K+vg5MIQdXg+Hg7ep1MNNOPDjQ+zoUC2j0AdxRbMAdtAKPrmt2xWBbG1AVs10A10r3DgHlMsn32gZQtbGN3R/vxNy2LTilZSPW9dFrhT++x+GwnAh0oiedPIMH6VSNUUYcJXptwPv+8+OkzBsbam32xaa2UMwUat5SnsG6ZLthm227iNmJlTRxJ1WIDi+hPLmUN3YXfksHd2LtoJPqXe6hOp+if/p/v9072bYY9kosZJB0QtnwO7fp3oIger3TGLSHolfVx+RbLtYXpLkhywZUcFqJl6AbHTR4BAomONmQifvxYG0lFtqj8Qe2xqX7ZZYQSaC8qqhCEhjvZ9uCeIjOaE8skzLOiu90kE3xNTqqhPghkhZfJRPDfTRVpPewkpVUGAEHpSBE1qAvRZtkYwCEFLB6qxsi0EmjucRpdhwwRQqfX+L8md4XvQPxaHx00ihqxjXTWsmf1ol7ad7JXA57h/MaWhqpJFz3hHUtcVQVxHCWyyzjZIDY4hu+sy7IoK0hmVGtoEojuumAWhc4+3LcF3FbDDKjVIOLbWZQ3lx4TkB7bS6Z0pM+78Qn6U/tyllMT5aCtJRlq3HIWL09qThhTXWOXSx/Rd3lppUM7clVhjCKmanEaW+4mhETfAo1TXgutLdSIwa5Pq0HjVw6L/N5B47+MjFcJKVt9GIFgUmPxlmwaAzHD3PpY3oh9ZZbPmJaz4Aclx67QP0eTf49FL2B2TqcwnR3mm3KQWoffW3y0Bdbe0ye2+zBMDRPfJHRbOSBtiD1T4dIEdIHh7H8BXKqe8w8toD7iUsdDTY4XRJ97mOmczlYFx805vVNpg9L7LrmSKcI6+0P", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Industry = _t, IndustrySeq = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Industry", type text}, {"IndustrySeq", Int64.Type}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Industry", "★Industry "}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_ResultType = Table
+

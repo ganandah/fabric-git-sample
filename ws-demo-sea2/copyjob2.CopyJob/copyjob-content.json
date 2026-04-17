@@ -1,0 +1,60 @@
+{
+  "properties": {
+    "jobMode": "Batch",
+    "source": {
+      "type": "Parquet",
+      "connectionSettings": {
+        "type": "AzureBlobStorage",
+        "typeProperties": {
+          "containerUri": "https://azureopendatastorage.blob.core.windows.net/holidaydatacontainer"
+        }
+      }
+    },
+    "destination": {
+      "type": "DataWarehouseTable",
+      "connectionSettings": {
+        "type": "DataWarehouse",
+        "typeProperties": {
+          "workspaceId": "c7068604-3ae0-4f7c-ae10-7391891697a9",
+          "artifactId": "07dcb04c-6065-45fc-abcf-78bec9c30b7a",
+          "endPoint": "n7fwtgauikdednod4ienkhw3oy-asdanr7ahj6e7lqqooiysfuxve.datawarehouse.fabric.microsoft.com"
+        },
+        "externalReferences": {
+          "connection": "f18315fd-ec5f-4744-8257-16cad5d8603f"
+        }
+      }
+    },
+    "policy": {
+      "timeout": "0.12:00:00"
+    }
+  },
+  "activities": [
+    {
+      "id": "ef9e503b16f9e8",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobStorageLocation",
+              "folderPath": "Processed",
+              "container": "holidaydatacontainer"
+            },
+            "compressionCodec": "snappy"
+          },
+          "storeSettings": {
+            "recursive": false,
+            "wildcardFileName": "*.parquet"
+          }
+        },
+        "destination": {
+          "tableOption": "autoCreate",
+          "datasetSettings": {
+            "schema": "dbo",
+            "table": "holidays"
+          }
+        },
+        "enableStaging": false
+      }
+    }
+  ]
+}

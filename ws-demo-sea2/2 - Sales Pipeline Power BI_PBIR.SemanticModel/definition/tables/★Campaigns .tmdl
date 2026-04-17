@@ -1,0 +1,43 @@
+table '★Campaigns '
+	lineageTag: c224dbcf-ae4a-4ed1-aa12-90dc2b0c05b4
+
+	column CampaignSeq
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a6c63ec3-5579-4b84-a163-4facb3e27251
+		summarizeBy: none
+		sourceColumn: CampaignSeq
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column '★ Campaign Type'
+		dataType: string
+		lineageTag: ee3b0b3c-9c23-4183-bc5a-063b492eed3a
+		summarizeBy: none
+		sourceColumn: ★ Campaign Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column '★ Campaign'
+		dataType: string
+		lineageTag: 71e61d50-7670-44c5-a072-93d8c76c3e1c
+		summarizeBy: none
+		sourceColumn: ★ Campaign
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '★Campaigns -cca55cdc-14af-47e9-9e7c-43afff500fcf' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("bdHJTsMwEAbgV7FyLlLKVjjSqpWQWAL0VvUwiofEYuypvCjq2zMJGCy1F9vy/3kb73bVoq7ralZ9AGGQfpVCZIteveMnenQtqicEXe1nE50LWVswJP0z+C+MaitKB/WCQyCMEX22l6VlF3s6nlFXhZJUNZ51aqOcTwhB7vTrriV/dWQcymBpXKcetGoIWrToYlY3pXp0IULnweb0tky3gynvsZCppucp+ivCCjxKYw9gOpfl3Tm5YSIeLtIhq/vxCA8aQ8/DKNmKaw2Q+p/+sfP6xLqQxl1P5Fh/qZDlaNjJ+C2Bl0fQcfo/JQsjBqnG/hs=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [CampaignSeq = _t, #"Campaign Type" = _t, Campaign = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CampaignSeq", Int64.Type}, {"Campaign Type", type text}, {"Campaign", type text}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Campaign Type", "★ Campaign Type"}, {"Campaign", "★ Campaign"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,187 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.0.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY21SU11",
+      "reportVersionAtImport": {
+        "visual": "1.8.64",
+        "report": "2.0.64",
+        "page": "1.3.64"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Bzide03415932579080638.json",
+      "reportVersionAtImport": {
+        "visual": "1.8.68",
+        "report": "2.0.68",
+        "page": "1.3.68"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Middle'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "visible": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "usa.states.topo",
+          "path": "Shapemaps/usa.states.topo.json",
+          "type": "ShapeMap"
+        },
+        {
+          "name": "CY21SU11",
+          "path": "BaseThemes/CY21SU11.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Group_19888634141672434.png",
+          "path": "Group_19888634141672434.png",
+          "type": "Image"
+        },
+        {
+          "name": "Icons_-_Sales-012522623751783841.png",
+          "path": "Icons_-_Sales-012522623751783841.png",
+          "type": "Image"
+        },
+        {
+          "name": "Icons_-_Sales-062978271630844447.png",
+          "path": "Icons_-_Sales-062978271630844447.png",
+          "type": "Image"
+        },
+        {
+          "name": "Icons_-_Sales-029142157952402861.png",
+          "path": "Icons_-_Sales-029142157952402861.png",
+          "type": "Image"
+        },
+        {
+          "name": "Icons_-_Sales-0544218706922011064.png",
+          "path": "Icons_-_Sales-0544218706922011064.png",
+          "type": "Image"
+        },
+        {
+          "name": "Icons_-_Sales-0320006125850609946.png",
+          "path": "Icons_-_Sales-0320006125850609946.png",
+          "type": "Image"
+        },
+        {
+          "name": "Icons_-_Sales-134800023673893694.png",
+          "path": "Icons_-_Sales-134800023673893694.png",
+          "type": "Image"
+        },
+        {
+          "name": "Icons_-_Sales-166053261078901904.png",
+          "path": "Icons_-_Sales-166053261078901904.png",
+          "type": "Image"
+        },
+        {
+          "name": "Icons_-_Sales-1816664695026438903.png",
+          "path": "Icons_-_Sales-1816664695026438903.png",
+          "type": "Image"
+        },
+        {
+          "name": "Icons_-_Sales-194144325856962938.png",
+          "path": "Icons_-_Sales-194144325856962938.png",
+          "type": "Image"
+        },
+        {
+          "name": "Icons_-_Sales-196798355396941242.png",
+          "path": "Icons_-_Sales-196798355396941242.png",
+          "type": "Image"
+        },
+        {
+          "name": "Icons_-_Sales-1646030338594596465.png",
+          "path": "Icons_-_Sales-1646030338594596465.png",
+          "type": "Image"
+        },
+        {
+          "name": "Icons_-_Sales-1903662471814893076.png",
+          "path": "Icons_-_Sales-1903662471814893076.png",
+          "type": "Image"
+        },
+        {
+          "name": "Icons_-_Sales-159558181912195982.png",
+          "path": "Icons_-_Sales-159558181912195982.png",
+          "type": "Image"
+        },
+        {
+          "name": "Icons_-_Sales-179961840662636945.png",
+          "path": "Icons_-_Sales-179961840662636945.png",
+          "type": "Image"
+        },
+        {
+          "name": "Bzide03415932579080638.json",
+          "path": "Bzide03415932579080638.json",
+          "type": "CustomTheme"
+        }
+      ]
+    },
+    {
+      "name": "FlowVisual_C29F1DCC_81F5_4973_94AD_0517D44CC06A",
+      "type": "CustomVisual",
+      "items": [
+        {
+          "name": "FlowVisual_C29F1DCC_81F5_4973_94AD_0517D44CC06A",
+          "path": "FlowVisual_C29F1DCC_81F5_4973_94AD_0517D44CC06A",
+          "type": "CustomVisualMetadata"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true
+  },
+  "slowDataSourceSettings": {
+    "isCrossHighlightingDisabled": false,
+    "isSlicerSelectionsButtonEnabled": false,
+    "isFilterSelectionsButtonEnabled": false,
+    "isFieldWellButtonEnabled": false,
+    "isApplyAllButtonEnabled": false
+  }
+}

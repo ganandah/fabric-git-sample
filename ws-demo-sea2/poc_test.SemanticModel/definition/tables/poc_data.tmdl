@@ -1,0 +1,218 @@
+table poc_data
+	lineageTag: bbabd3f6-011d-4cd9-a192-f5ec4170526c
+	sourceLineageTag: [dbo].[poc_data]
+
+	column id
+		dataType: string
+		lineageTag: 02395afa-ca11-44df-ad93-c10420e34093
+		sourceLineageTag: id
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column bu_intersection
+		dataType: string
+		lineageTag: 55a9531c-f60c-4a4e-bc88-b8f48dcf9c5a
+		sourceLineageTag: bu_intersection
+		summarizeBy: none
+		sourceColumn: bu_intersection
+
+		annotation SummarizationSetBy = Automatic
+
+	column cust_covadex_status
+		dataType: string
+		lineageTag: 2d3bd328-0236-4756-b2f4-62b8380be920
+		sourceLineageTag: cust_covadex_status
+		summarizeBy: none
+		sourceColumn: cust_covadex_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column daas_bu_owner
+		dataType: string
+		lineageTag: b65aa6ad-7422-4698-9915-0cafc47e5475
+		sourceLineageTag: daas_bu_owner
+		summarizeBy: none
+		sourceColumn: daas_bu_owner
+
+		annotation SummarizationSetBy = Automatic
+
+	column cust_car_brand
+		dataType: string
+		lineageTag: 0d5c8240-180f-4e31-b462-a3d6331ff949
+		sourceLineageTag: cust_car_brand
+		summarizeBy: none
+		sourceColumn: cust_car_brand
+
+		annotation SummarizationSetBy = Automatic
+
+	column cust_loan_amount
+		dataType: string
+		lineageTag: 61fd326b-1857-453f-8f3f-6a09ac70c82e
+		sourceLineageTag: cust_loan_amount
+		summarizeBy: none
+		sourceColumn: cust_loan_amount
+
+		annotation SummarizationSetBy = Automatic
+
+	column cust_model
+		dataType: string
+		lineageTag: 57655dc8-6a22-4d7a-ba80-eec3fe94bbcb
+		sourceLineageTag: cust_model
+		summarizeBy: none
+		sourceColumn: cust_model
+
+		annotation SummarizationSetBy = Automatic
+
+	column cust_teman_seva_name
+		dataType: string
+		lineageTag: ac71d9ef-de3e-4ff9-be18-afc4836b1017
+		sourceLineageTag: cust_teman_seva_name
+		summarizeBy: none
+		sourceColumn: cust_teman_seva_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column cust_variant
+		dataType: string
+		lineageTag: de6e34cd-8d0e-494b-baca-8c344a50b39d
+		sourceLineageTag: cust_variant
+		summarizeBy: none
+		sourceColumn: cust_variant
+
+		annotation SummarizationSetBy = Automatic
+
+	column cust_vehicle_model_year
+		dataType: string
+		lineageTag: 9d8f6163-950d-4e02-af27-295416c967b4
+		sourceLineageTag: cust_vehicle_model_year
+		summarizeBy: none
+		sourceColumn: cust_vehicle_model_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column leads_name
+		dataType: string
+		lineageTag: cf354f60-eac6-4b30-affc-b87f6e924b37
+		sourceLineageTag: leads_name
+		summarizeBy: none
+		sourceColumn: leads_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column leads_origination
+		dataType: string
+		lineageTag: eeec6ead-566f-436c-9015-221db8b3b3da
+		sourceLineageTag: leads_origination
+		summarizeBy: none
+		sourceColumn: leads_origination
+
+		annotation SummarizationSetBy = Automatic
+
+	column platform
+		dataType: string
+		lineageTag: 095dddf5-4aca-46a5-8194-4ef22839b918
+		sourceLineageTag: platform
+		summarizeBy: none
+		sourceColumn: platform
+
+		annotation SummarizationSetBy = Automatic
+
+	column promo_origination
+		dataType: string
+		lineageTag: 0bf00db9-9436-4e80-bb88-adcad0e890e4
+		sourceLineageTag: promo_origination
+		summarizeBy: none
+		sourceColumn: promo_origination
+
+		annotation SummarizationSetBy = Automatic
+
+	column teman_seva_code
+		dataType: string
+		lineageTag: 98c97cfb-c9b2-4f06-a623-04a2b7859f2f
+		sourceLineageTag: teman_seva_code
+		summarizeBy: none
+		sourceColumn: teman_seva_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column teman_seva_trx_code_registration
+		dataType: string
+		lineageTag: e6e650e5-f983-416e-884a-db296ed6f3d7
+		sourceLineageTag: teman_seva_trx_code_registration
+		summarizeBy: none
+		sourceColumn: teman_seva_trx_code_registration
+
+		annotation SummarizationSetBy = Automatic
+
+	column injected_time
+		dataType: string
+		lineageTag: 7fba218a-45ec-452b-8617-d188a386fa6b
+		sourceLineageTag: injected_time
+		summarizeBy: none
+		sourceColumn: injected_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column utm_group
+		dataType: string
+		lineageTag: 424ad9c4-edf5-449c-99d4-8788a06fd2a8
+		sourceLineageTag: utm_group
+		summarizeBy: none
+		sourceColumn: utm_group
+
+		annotation SummarizationSetBy = Automatic
+
+	column channel_group
+		dataType: string
+		lineageTag: c43876b9-9295-4fc9-87a3-8d2ccda6e631
+		sourceLineageTag: channel_group
+		summarizeBy: none
+		sourceColumn: channel_group
+
+		annotation SummarizationSetBy = Automatic
+
+	column cust_tenor_month
+		dataType: string
+		lineageTag: 2b567ebd-0477-49b6-8cab-6c3e5b957dbd
+		sourceLineageTag: cust_tenor_month
+		summarizeBy: none
+		sourceColumn: cust_tenor_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column phone_number_first_four_digit
+		dataType: string
+		lineageTag: 2587fcf9-7490-45d0-8c7c-35e19689b805
+		sourceLineageTag: phone_number_first_four_digit
+		summarizeBy: none
+		sourceColumn: phone_number_first_four_digit
+
+		annotation SummarizationSetBy = Automatic
+
+	column phone_number_length
+		dataType: int64
+		formatString: 0
+		lineageTag: 0cb8f87f-4500-4351-a38e-fa637962f1ff
+		sourceLineageTag: phone_number_length
+		summarizeBy: sum
+		sourceColumn: phone_number_length
+
+		annotation SummarizationSetBy = Automatic
+
+	column qualified_status
+		dataType: string
+		lineageTag: 20c6974d-bf45-4263-a462-f23f9129166a
+		sourceLineageTag: qualified_status
+		summarizeBy: none
+		sourceColumn: qualified_status
+
+		annotation SummarizationSetBy = Automatic
+
+	partition poc_data = entity
+		mode: directLake
+		source
+			entityName: poc_data
+			expressionSource: 'DirectLake - demo_lh'
+

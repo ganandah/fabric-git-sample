@@ -1,0 +1,14 @@
+[
+  {
+    "name": "source",
+    "path": "/Files",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "c6ac005e-8a79-4f3f-94bc-4960fd8ee118",
+        "location": "https://mlsourceid.dfs.core.windows.net",
+        "subpath": "/source"
+      }
+    }
+  }
+]

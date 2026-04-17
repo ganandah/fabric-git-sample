@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "ProductDirectQuery"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "169f1568-c91e-a964-4d71-ce5a6218249b"
+  }
+}

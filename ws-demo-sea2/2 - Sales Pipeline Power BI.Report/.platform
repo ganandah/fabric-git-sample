@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "2 - Sales Pipeline Power BI"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8eb002cf-bea6-8220-421c-ef6f8bdd9bd0"
+  }
+}
